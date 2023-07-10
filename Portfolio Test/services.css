@@ -1,0 +1,50 @@
+#services_section{
+    padding: 70px 0;
+    background-color: var(--primary-color);
+}
+#services_section h2{
+    font-size: 50px;
+    text-align: center;
+}
+.flex_container{
+margin-top: 50px;
+display: flex;
+gap: 40px;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card{
+    width: 350px;
+    max-width: calc(90% - 40px);
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.card *{
+    text-align: center;
+}
+.card a{
+    background-color: var(--main-brand-color);
+    width: min-content;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 4px solid var(--main-brand-color);
+    transition: 150ms ease-in-out;
+}
+.card a:hover{
+    background: transparent;
+}
+
+@media(max-width:800px){
+    #services_section h2{
+        font-size: 12vw;
+    }
+}

@@ -1,0 +1,42 @@
+:root{
+    --main-brand-color:#297AE3;
+    --primary-color:#15171C;
+    --secondary-color:#232933;
+    --light-secondary-color:#2E3744;
+    --text-color:white;
+    --secondary-text-color:#B3B4B6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    color: var(--text-color);
+}
+h1{
+    font-size: 100px;
+    line-height: 115%;
+}
+h3{
+    font-size: 38px;
+}
+.subheading{
+    margin-top: 25px;
+    color: var(--secondary-text-color);
+}
+@media(max-width:800px){
+    h1{
+        font-size: 12vw;
+        text-align: center;
+    }
+    .subheading{
+        text-align: center;
+    }
+    body{
+        font-size: 16px;
+    }
+}
